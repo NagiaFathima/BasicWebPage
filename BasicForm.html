@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>BasicForm</title>
+    <link rel="Stylesheet" href="BasicForm.css">
+    <script>
+        function valueChanged(){
+            if(document.getElementById("male").checked == true)
+            {
+                document.getElementById("female").checked = false;
+                document.getElementById("male").value = 1;
+                document.getElementById("female").value = 0;
+            }
+            else{
+                document.getElementById("male").checked = false;
+                document.getElementById("female").value = 0;
+                document.getElementById("male").value = 1;
+            }
+        }
+    </script>
+</head>
+<body style="text-align: center;padding: 100px">
+<form>
+    <label style="display: block">First Name:
+        <input type="Text" placeholder="First Name">
+    </label>
+    <label style="display: block">Middle Name:
+        <input type="text" placeholder="Middle Name">
+    </label>
+    <label style="display: block">Last Name:
+        <input type="text" placeholder="Last Name">
+    </label>
+    <label style="display: block">Email Address:
+        <input type="Text" placeholder="Email Address">
+    </label>
+    <label style="display: block">Address Line:
+        <input type="Text" placeholder="apt/suit/building">
+    </label>
+    <label>Choose your city:</label>
+    <select name="State" id="indiana">
+        <option value="hammond">--Select--</option>
+        <option value="hammond">Hammond</option>
+        <option value="highland">Highland</option>
+        <option value="munster">Munster</option>
+    </select>
+    <input type="text" value="Indiana">
+    <label style="display: block">ZipCode:
+        <input type="Text" placeholder="ZipCode">
+    </label>
+    <label>Gender:</label>
+    <input type="radio" name="gender" id="male" style="display: inline" onchange="valueChanged()">Male</input>
+    <input type="radio" name="gender" id="female" style="display: inline" onchange="valueChanged()">Female</input>
+
+    <label style="display: block">Select your purpose:</label>
+    <select name="Purpose" id="purpose">
+        <option value="enquiry">Enquiry</option>
+        <option value="feedback">Feedback</option>
+    </select>
+    <label style="display:block">Enter the description:</label>
+    <textarea name="" id="" cols="30" rows="10" style="overflow-y: scroll;height: 100px"></textarea><br>
+    <input type="checkbox">I agree that the information provided here is valid to my knowledge<br>
+    <button>Submit</button>
+</form>
+</body>
+</html>
