@@ -1,0 +1,67 @@
+.login-portal {
+    width:30%;
+    padding: 16px 20px;
+    border:1px solid black;
+    float:right;
+    margin: 0px 200px 0px 50px;
+    background-color:white;
+    border-radius: 8px;
+}
+.line{
+    border: 0.5px solid lightslategrey;
+}
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0 ;
+    border: 1px solid black;
+    box-sizing: content-box;
+
+}
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    box-sizing: content-box;
+    display:inline-block;
+    border-radius: 8px;
+}
+footer{
+    padding:50px 300px;
+    font-size: 10px;
+    color: lightslategray;
+    font-family: Arial, serif;
+}
+.facebook-demo{
+background-color: #dae2f1;
+    font-family: Arial, serif;
+font-size: 25px;
+padding:150px 100px 500px 200px;
+}
+.details{
+float:left;
+padding:0.5%;
+}
+.details-1{
+    float:right;
+    font-size: small;
+    padding-bottom: 100px;
+
+}
+a:hover{
+text-decoration: underline;
+}
+a{
+    color:dimgray;text-decoration: none;
+}
+.create-page{
+    text-decoration: none;
+    color: black;
+}
+.create-page:hover{
+    text-decoration: underline;
+}
